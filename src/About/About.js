@@ -1,7 +1,8 @@
 import React from 'react';
 import 'animate.css';
 import './About.scss';
-import me from './assets/me.jpg';
+import Image from './../Image/Image';
+import profilePicture from './assets/me.jpg';
 import workstation from './assets/workstation.jpg';
 
 export default function About() {
@@ -15,7 +16,11 @@ export default function About() {
                         </div>
                     </div>
                     <div class="column-xs-12 column-md-4">
-                        <img className="imageCover animated fadeInLeft delay-1s" src={me} alt="" />
+                        <Image 
+                            image={profilePicture} 
+                            imageTitle="Panos Hapsides profile picture" 
+                            className="imageCover animated fadeInLeft delay-1s"
+                        />
                     </div>
                     <div class="column-xs-12 column-md-7">
                         <div class="intro">
@@ -41,7 +46,11 @@ export default function About() {
                         </blockquote>
                     </div>
                     <div class="column-xs-12 column-md-5">
-                        <img className="imageCover animated fadeInUp delay-2s" src={workstation} alt="" />
+                        <Image 
+                            image={workstation} 
+                            imageTitle="My workstation" 
+                            className="imageCover"
+                        />
                     </div>
                 </section>
             </div>
