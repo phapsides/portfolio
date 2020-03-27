@@ -1,15 +1,6 @@
 @import './../Variables';
 
 .About {
-    .section-heading {
-        transform: rotate(0) translateX(0);
-
-        @media (min-width: $md) {
-            position: absolute;
-            transform-origin: top left;
-            transform: rotate(-90deg) translateX(-100%);
-        }
-    }
 
     .intro {
         margin: 1rem 0;

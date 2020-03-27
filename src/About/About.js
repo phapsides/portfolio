@@ -1,29 +1,30 @@
 import React from 'react';
 import 'animate.css';
 import './About.scss';
+import Title from './../Title/Title';
 import Image from './../Image/Image';
 import profilePicture from './../common/images/profile-picture.jpg';
 import workstation from './../common/images/workstation.jpg';
 
 export default function About() {
     return (
-        <main class="About">
-            <div class="container">
-                <section class="grid info">
-                    <div class="column-xs-12 column-md-1">
-                        <div class="about">
-                            <h1 class="section-heading animated fadeIn delay-2s">About Me</h1>
-                        </div>
+        <main className="About">
+            <div className="container">
+                <section className="grid">
+                    <div className="column-xs-12 column-md-1">
+                        <Title 
+                            pageTitle="About Me" 
+                        />
                     </div>
-                    <div class="column-xs-12 column-md-4">
+                    <div className="column-xs-12 column-md-4">
                         <Image 
                             image={profilePicture} 
                             imageTitle="Panos Hapsides profile picture" 
                             className="imageCover animated fadeInLeft delay-1s"
                         />
                     </div>
-                    <div class="column-xs-12 column-md-7">
-                        <div class="intro">
+                    <div className="column-xs-12 column-md-7">
+                        <div className="intro">
                             <h2>
                                 Front End Web Developer 
                             </h2>
@@ -38,14 +39,14 @@ export default function About() {
                             </p>
                         </div>
                     </div>
-                    <div class="column-xs-12 column-md-7">
+                    <div className="column-xs-12 column-md-7">
                         <blockquote>
                             <h3>
                                 I am drowning in data, but I am starving for knowledge! 
                             </h3>
                         </blockquote>
                     </div>
-                    <div class="column-xs-12 column-md-5">
+                    <div className="column-xs-12 column-md-5">
                         <Image 
                             image={workstation} 
                             imageTitle="My workstation" 

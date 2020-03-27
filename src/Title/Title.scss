@@ -1,0 +1,13 @@
+@import './../Variables';
+
+.Title{
+    .section-heading {
+        transform: rotate(0) translateX(0);
+
+        @media (min-width: $md) {
+            position: absolute;
+            transform-origin: top left;
+            transform: rotate(-90deg) translateX(-100%);
+        }
+    }
+}
