@@ -6,7 +6,7 @@ export default function Image(props) {
         <img 
             src={props.image} 
             alt={props.imageTitle} 
-            className={props.className}
+            className={`Image ${props.className}`}
         />
     )
 }
