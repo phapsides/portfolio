@@ -1,6 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import 'animate.css';
-import Logo from './logo.svg';
+// import Logo from './logo.svg';
 import './Nav.scss';
 
 export default function Nav() {
@@ -9,16 +10,16 @@ export default function Nav() {
             <div className="container">
                 <div className="grid">
                     <div className="column-xs-12 column-md-8">
-                        {/* <p className="logo animated flipInX delay-3s">Panos Hapsides</p> */}
-                        <img className="logo animated flipInX delay-3s" src={Logo} alt="" />
+                        <p className="logo animated flipInX delay-3s">Panos Hapsides</p>
+                        {/* <img className="logo animated flipInX delay-3s" src={Logo} alt="Panos Hapsided logo" /> */}
                     </div>
                     <div className="column-xs-12 column-md-4">
                         <ul>
                             <li>
-                                <a href="/" title="About">About</a>
+                                <Link to="/">About</Link>
                             </li>
                             <li>
-                                <a href="/" title="Projects">Projects</a>
+                                <Link to="/projects">Projects</Link>
                             </li>
                         </ul>
                     </div>
