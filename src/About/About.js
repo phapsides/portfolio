@@ -2,8 +2,8 @@ import React from 'react';
 import 'animate.css';
 import './About.scss';
 import Image from './../Image/Image';
-import profilePicture from './assets/me.jpg';
-import workstation from './assets/workstation.jpg';
+import profilePicture from './../common/images/profile-picture.jpg';
+import workstation from './../common/images/workstation.jpg';
 
 export default function About() {
     return (
@@ -41,7 +41,7 @@ export default function About() {
                     <div class="column-xs-12 column-md-7">
                         <blockquote>
                             <h3>
-                                I am drowning in data, but I am starving for knowledge!
+                                I am drowning in data, but I am starving for knowledge! 
                             </h3>
                         </blockquote>
                     </div>

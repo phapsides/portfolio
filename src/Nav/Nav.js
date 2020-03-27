@@ -15,10 +15,10 @@ export default function Nav() {
                     <div className="column-xs-12 column-md-4">
                         <ul>
                             <li>
-                                <a href="/" title="">About</a>
+                                <a href="/" title="About">About</a>
                             </li>
                             <li>
-                                <a href="/" title="">Projects</a>
+                                <a href="/" title="Projects">Projects</a>
                             </li>
                         </ul>
                     </div>
