@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './ProjectItem.scss';
+import '@fortawesome/fontawesome-free';
+
 
 export default function ProjectItem(props) {
     return (
@@ -17,18 +19,15 @@ export default function ProjectItem(props) {
                     </h2>
                     <div className="mc-content">
                         <div className="img-container">
-                            {/* <img className="img-responsive" src={props.image}> */}
                             <img src="https://picsum.photos/seed/picsum/718/718" alt={`${props.title} image cover`} />
                         </div>
                         <div className="mc-description">
                             {props.description}
                         </div>
                     </div>
-                    {/* 
-                        <a className="mc-btn-action">
-                            <i className="fa fa-bars"></i>
-                        </a> 
-                    */}
+                    <a className="mc-btn-action">
+                        <i className="fa fa-bars"></i>
+                    </a> 
                     <div className="mc-footer">
                         <h4>
                             Technologies/Stack
