@@ -6,9 +6,9 @@ export default function ProjectItem(props) {
     return (
         <div className="column-xs-12 column-md-4">
             <Link to={`/projects/${props.slug}`} className="ProjectItem">
-                <article className="material-card Pink">
+                <article className="material-card ribbon">
                     <h2>
-                        <span> {props.title}</span>
+                        <span>{props.title}</span>
                         <strong>
                             {/* TODO: Update the star with code icon */}
                             <i className="fa fa-fw fa-star"></i>
@@ -18,15 +18,17 @@ export default function ProjectItem(props) {
                     <div className="mc-content">
                         <div className="img-container">
                             {/* <img className="img-responsive" src={props.image}> */}
-                            <img src="https://picsum.photos/seed/picsum/200/300" alt={`${props.title} image cover`} />
+                            <img src="https://picsum.photos/seed/picsum/718/718" alt={`${props.title} image cover`} />
                         </div>
                         <div className="mc-description">
                             {props.description}
                         </div>
                     </div>
-                    <a className="mc-btn-action">
-                        <i className="fa fa-bars"></i>
-                    </a>
+                    {/* 
+                        <a className="mc-btn-action">
+                            <i className="fa fa-bars"></i>
+                        </a> 
+                    */}
                     <div className="mc-footer">
                         <h4>
                             Technologies/Stack
