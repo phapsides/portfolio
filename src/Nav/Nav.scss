@@ -9,19 +9,18 @@
     }
 
     .logo {
-        // color: $black;
-        // font-weight: 700;
-        // font-size: 0.875rem;
-        // letter-spacing: 0.125rem;
-        // text-transform: uppercase;
-        // margin: 0;
-        width: 160px;
+        color: $black;
+        font-weight: 700;
+        font-size: 0.875rem;
+        letter-spacing: 0.125rem;
+        text-transform: uppercase;
+        margin: 0;
     }
 
     ul {
         display: flex;
         justify-content: flex-start;
-        
+
         @media (min-width: $md) {
             justify-content: flex-end;
         }
@@ -33,8 +32,8 @@
             text-transform: uppercase;
             margin: 0 1.5rem 0;
 
-            &:nth-child(3) {
-                margin: 0;
+            &:last-child {
+                margin-right: 0;
             }
         }
     }

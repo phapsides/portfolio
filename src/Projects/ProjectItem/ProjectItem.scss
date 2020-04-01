@@ -1,3 +1,17 @@
+.fa-spin-fast {
+    animation: fa-spin-fast 0.2s infinite linear;
+}
+
+@keyframes fa-spin-fast {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(359deg);
+    }
+}
+
 .ProjectItem {
     .material-card {
         position: relative;
@@ -154,33 +168,32 @@
 
     .material-card.ribbon {
         h2 {
-            background-color: #F44336;
+            // background-color: #F44336;
 
-            // background-color: #FFEB3B;
-            // color: #000;
+            background-color: #FFEB3B;
+            color: #000;
             &:after {
-                border-top-color: #F44336;
-                border-right-color: #F44336;
-                // border-top-color: #FFEB3B;
-                // border-right-color: #FFEB3B;
+                // border-top-color: #F44336;
+                // border-right-color: #F44336;
+                border-top-color: #FFEB3B;
+                border-right-color: #FFEB3B;
                 border-bottom-color: transparent;
                 border-left-color: transparent;
             }
 
             &:before {
                 border-top-color: transparent;
-                border-right-color: #B71C1C;
-                border-bottom-color: #B71C1C;
-                // border-right-color: #F57F17;
-                // border-bottom-color: #F57F17;
+                // border-right-color: #B71C1C;
+                // border-bottom-color: #B71C1C;
+                border-right-color: #F57F17;
+                border-bottom-color: #F57F17;
                 border-left-color: transparent;
             }
         }
 
         .mc-btn-action {
-            background-color: #F44336;
-
-            // background-color: #FFEB3B;
+            // background-color: #F44336;
+            background-color: #FFEB3B;
             &:hover {
                 // background-color: #B71C1C;
                 background-color: #F57F17;
@@ -281,54 +294,37 @@
         h2 {
             &:before {
                 border-top-color: transparent;
-                border-right-color: #F44336;
-                border-bottom-color: #F44336;
-                // border-right-color: #FFEB3B;
-                // border-bottom-color: #FFEB3B;
+                // border-right-color: #F44336;
+                // border-bottom-color: #F44336;
+                border-right-color: #FFEB3B;
+                border-bottom-color: #FFEB3B;
                 border-left-color: transparent;
             }
 
             &:after {
-                border-top-color: #B71C1C;
-                border-right-color: #B71C1C;
-                // border-top-color: #F57F17;
-                // border-right-color: #F57F17;
+                // border-top-color: #B71C1C;
+                // border-right-color: #B71C1C;
+                border-top-color: #F57F17;
+                border-right-color: #F57F17;
                 border-bottom-color: transparent;
                 border-left-color: transparent;
             }
         }
 
         .mc-content {
-            background-color: #FFEBEE;
-            // background-color: #FFFDE7;
+            // background-color: #FFEBEE;
+            background-color: #FFFDE7;
         }
 
         .mc-btn-action {
-            border-color: #FFEBEE;
-            // border-color: #FFFDE7;
+            // border-color: #FFEBEE;
+            border-color: #FFFDE7;
         }
 
         .mc-footer {
-            background-color: #FFCDD2;
-            // background-color: #FFF9C4;
+            // background-color: #FFCDD2;
+            background-color: #FFF9C4;
         }
 
-    }
-}
-
-
-
-
-.fa-spin-fast {
-    animation: fa-spin-fast 0.2s infinite linear;
-}
-
-@keyframes fa-spin-fast {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(359deg);
     }
 }
