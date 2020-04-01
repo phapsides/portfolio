@@ -1,0 +1,37 @@
+.Content {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 16px;
+    left: 16px;
+    transition: all 0.3s;
+
+    .img-container {
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+        transition: all 0.3s;
+
+        img {
+            height: auto;
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+
+    .description {
+        position: absolute;
+        top: 100%;
+        right: 30px;
+        left: 30px;
+        bottom: 54px;
+        overflow: hidden;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        transition: all 1.2s;
+    }
+}

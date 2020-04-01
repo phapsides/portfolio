@@ -1,7 +1,7 @@
 import React from 'react';
 import './Projects.scss';
 import Title from './../Title/Title';
-import ProjectItem from './ProjectItem/ProjectItem';
+import MaterialCard from './MaterialCard/MaterialCard';
 import getProjects from './getProjects';
 
 export default function Projects() {
@@ -16,7 +16,7 @@ export default function Projects() {
                         <section className="grid">
                             {
                                 getProjects().map(projectItem => 
-                                    <ProjectItem 
+                                    <MaterialCard 
                                         key={projectItem.slug}
                                         slug={projectItem.slug} 
                                         title={projectItem.title} 
