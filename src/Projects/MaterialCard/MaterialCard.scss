@@ -16,6 +16,9 @@
 }
 
 .ProjectItem {
+
+    display: block;
+
     .material-card {
         position: relative;
         height: 0;
@@ -34,16 +37,6 @@
             margin: 0;
             z-index: 10;
             transition: all 0.3s;
-
-            span {
-                display: block;
-            }
-
-            strong {
-                font-weight: 400;
-                display: block;
-                font-size: 0.8em;
-            }
 
             &:before,
             &:after {
@@ -64,54 +57,43 @@
         
     }
 
-    .material-card.ribbon {
+    .ribbon {
         h2 {
-            // background-color: #F44336;
-
-            background-color: #FFEB3B;
-            color: #000;
+            background-color: #9E9E9E;
             &:after {
-                // border-top-color: #F44336;
-                // border-right-color: #F44336;
-                border-top-color: #FFEB3B;
-                border-right-color: #FFEB3B;
+                border-top-color: #9E9E9E;
+                border-right-color: #9E9E9E;
                 border-bottom-color: transparent;
                 border-left-color: transparent;
             }
 
             &:before {
                 border-top-color: transparent;
-                // border-right-color: #B71C1C;
-                // border-bottom-color: #B71C1C;
-                border-right-color: #F57F17;
-                border-bottom-color: #F57F17;
+                border-right-color: #212121;
+                border-bottom-color: #212121;
                 border-left-color: transparent;
             }
         }
 
         .BtnAction {
-            // background-color: #F44336;
-            background-color: #FFEB3B;
+            background-color: #9E9E9E;
             &:hover {
-                // background-color: #B71C1C;
-                background-color: #F57F17;
+                background-color: #212121;
             }
         }
 
         .Footer {
             h4 {
-                // color: #B71C1C;
-                color: #F57F17;
+                color: #212121;
             }
 
-            a {
-                background-color: #B71C1C;
-                // background-color: #F57F17;
+            .devicon {
+                background-color: #212121;
             }
         }
     }
 
-    .material-card.material-card--active {
+    .material-card.active {
         @media screen and (max-width: 767px) {
             padding-bottom: 0;
             height: auto;
@@ -129,99 +111,35 @@
                 bottom: -16px;
             }
         }
-
-        .Content {
-            padding-top: 5.6em;
-
-            @media screen and (max-width: 767px) {
-                position: relative;
-                margin-right: 16px;
-            }
-
-            .img-container {
-                border-radius: 50%;
-                left: 0;
-                top: 12px;
-                width: 60px;
-                height: 60px;
-                z-index: 20;
-            }
-
-            .description {
-                top: 50px;
-                padding-top: 5.6em;
-                opacity: 1;
-                filter: alpha(opacity=100);
-
-                @media screen and (max-width: 767px) {
-                    position: relative;
-                    top: auto;
-                    right: auto;
-                    left: auto;
-                    padding: 50px 30px 70px 30px;
-                    bottom: 0;
-                }
-            }
-        }
-
-        .BtnAction {
-            top: 62px;
-        }
-
-        .Footer {
-            overflow: visible;
-            position: absolute;
-            top: calc(100% - 16px);
-            left: 16px;
-            right: 0;
-            height: 82px;
-            padding-top: 15px;
-            padding-left: 25px;
-
-            a {
-                top: 0;
-            }
-
-            h4 {
-                top: -32px;
-            }
-        }
     }
 
-    .material-card.ribbon.material-card--active {
+    .material-card.ribbon.active {
         h2 {
             &:before {
                 border-top-color: transparent;
-                // border-right-color: #F44336;
-                // border-bottom-color: #F44336;
-                border-right-color: #FFEB3B;
-                border-bottom-color: #FFEB3B;
+                border-right-color: #9E9E9E;
+                border-bottom-color: #9E9E9E;
                 border-left-color: transparent;
             }
 
             &:after {
-                // border-top-color: #B71C1C;
-                // border-right-color: #B71C1C;
-                border-top-color: #F57F17;
-                border-right-color: #F57F17;
+                border-top-color: #212121;
+                border-right-color: #212121;
                 border-bottom-color: transparent;
                 border-left-color: transparent;
             }
         }
 
         .Content {
-            // background-color: #FFEBEE;
-            background-color: #FFFDE7;
+            background-color: #FAFAFA;
         }
 
         .BtnAction {
-            // border-color: #FFEBEE;
-            border-color: #FFFDE7;
+            border-color: #FAFAFA;
         }
 
         .Footer {
-            // background-color: #FFCDD2;
-            background-color: #FFF9C4;
+            background-color: #F5F5F5;
         }
 
     }

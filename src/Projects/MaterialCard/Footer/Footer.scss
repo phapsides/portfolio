@@ -3,6 +3,18 @@
     overflow: hidden;
     transition: all 0.3s;
 
+    .material-card.active & {
+        overflow: visible;
+        position: absolute;
+        top: calc(100% - 16px);
+        left: 16px;
+        right: 0;
+        height: 82px;
+        padding-top: 15px;
+        padding-left: 25px;
+
+    }
+
     h4 {
         position: absolute;
         top: 200px;
@@ -12,9 +24,13 @@
         font-size: 16px;
         font-weight: 700;
         transition: all 1.4s;
+        
+        .material-card.active & {
+            top: -32px;
+        }
     }
 
-    a {
+    .devicon {
         display: block;
         float: left;
         position: relative;
@@ -27,6 +43,10 @@
         line-height: 52px;
         text-decoration: none;
         top: 200px;
+
+        .material-card.active & {
+            top: 0;
+        }
 
         &:nth-child(1) {
             transition: all 0.5s;

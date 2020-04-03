@@ -6,6 +6,15 @@
     left: 16px;
     transition: all 0.3s;
 
+    .material-card.active & {
+        padding-top: 5.6em;
+
+        @media screen and (max-width: 767px) {
+            position: relative;
+            margin-right: 16px;
+        }
+    }
+
     .img-container {
         overflow: hidden;
         position: absolute;
@@ -15,6 +24,15 @@
         height: 100%;
         z-index: 3;
         transition: all 0.3s;
+
+        .material-card.active & {
+            border-radius: 50%;
+            left: 0;
+            top: 12px;
+            width: 60px;
+            height: 60px;
+            z-index: 20;
+        }
 
         img {
             height: auto;
@@ -33,5 +51,21 @@
         opacity: 0;
         filter: alpha(opacity=0);
         transition: all 1.2s;
+
+        .material-card.active & {
+            top: 50px;
+            padding-top: 5.6em;
+            opacity: 1;
+            filter: alpha(opacity=100);
+
+            @media screen and (max-width: 767px) {
+                position: relative;
+                top: auto;
+                right: auto;
+                left: auto;
+                padding: 50px 30px 70px 30px;
+                bottom: 0;
+            }
+        }
     }
 }
