@@ -42,7 +42,9 @@ export default function About() {
                     <div className="column-xs-12 column-md-7">
                         <blockquote>
                             <h3>
-                                I am drowning in data, but I am starving for knowledge! 
+                                <em>
+                                    I am drowning in data, but I am starving for knowledge!
+                                </em>
                             </h3>
                         </blockquote>
                     </div>
