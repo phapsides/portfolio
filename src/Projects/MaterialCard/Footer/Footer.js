@@ -8,10 +8,12 @@ export default function Footer(props) {
             <h4>
                 Technologies/Stack
             </h4>
-            {/* TODO: Populate the below from getProjects */}
-            <i class={`devicon devicon-react-original colored`}></i>
-            <i class={`devicon devicon-javascript-plain colored`}></i>
-            <i class={`devicon devicon-sass-original colored`}></i>        
+            {
+                props.coreTechnologies
+                    .map(technology =>
+                        <i className={`devicon devicon-${technology} colored`}></i> 
+                    )
+            }  
         </div>
     )
 }

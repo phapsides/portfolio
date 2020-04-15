@@ -17,7 +17,7 @@ export default function ProjectItem(props) {
                     </h2>
                     <Content />
                     <BtnAction isOpen={() => setIsOpen(!isOpen)} />
-                    <Footer />
+                    <Footer coreTechnologies={props.coreTechnologies} />
                 </article>
             </div>
         </div>

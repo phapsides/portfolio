@@ -20,7 +20,7 @@ export default function Projects() {
                                         key={projectItem.slug}
                                         slug={projectItem.slug} 
                                         title={projectItem.title} 
-                                        logo={projectItem.logo} 
+                                        coreTechnologies={projectItem.coreTechnologies}
                                     />
                                 )
                             }
