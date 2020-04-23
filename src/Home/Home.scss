@@ -1,0 +1,23 @@
+.Home {
+    .logo {
+        height: 120px;
+        width: 320px;
+    }
+    .social-icons {
+        text-align: center;
+        a {
+            display: block;
+        }
+        li {
+            display: inline-block;
+            margin: 0 0.75rem 0 0;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        svg {
+            height: 1.75rem;
+            width: 1.75rem;
+        }
+    }
+}
