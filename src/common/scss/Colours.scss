@@ -1,0 +1,28 @@
+@import './Variables.scss';
+
+$map-colours: (
+	"white"     : $white,
+	"grey"      : $grey,
+	"black"     : $black,
+	"orange"    : $orange,
+	"blue"      : $blue,
+	"red"       : $red,
+	"green"     : $green,
+	"yellow"    : $yellow
+);
+
+// Background color
+@each $colour in $map-colours {
+
+    .bg-#{ nth( $colour, 1 ) } {
+    	background: #{ nth( $colour, 2 ) };
+    }
+}
+
+// Colored text
+@each $colour in $map-colours {
+
+    .text-#{ nth( $colour, 1 ) } {
+        color: #{ nth( $colour, 2 ) };
+    }
+}

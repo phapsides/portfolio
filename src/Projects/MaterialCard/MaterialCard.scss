@@ -1,5 +1,5 @@
-// TODO: Check what to do with nested components
-// TODO: look into encapsulation 
+// TODO: Make mobile first
+@import './../../common/scss/Variables';
 
 .fa-spin-fast {
     animation: fa-spin-fast 0.2s infinite linear;
@@ -14,6 +14,7 @@
         transform: rotate(359deg);
     }
 }
+
 
 .ProjectItem {
 
@@ -31,7 +32,7 @@
             left: 0;
             width: 100%;
             padding: 10px 16px;
-            color: #fff;
+            color: $white;
             font-size: 1.4em;
             line-height: 1.6em;
             margin: 0;
@@ -59,36 +60,36 @@
 
     .ribbon {
         h2 {
-            background-color: #9E9E9E;
+            background-color: $ribbon-primary;
             &:after {
-                border-top-color: #9E9E9E;
-                border-right-color: #9E9E9E;
+                border-top-color: $ribbon-primary;
+                border-right-color: $ribbon-primary;
                 border-bottom-color: transparent;
                 border-left-color: transparent;
             }
 
             &:before {
                 border-top-color: transparent;
-                border-right-color: #212121;
-                border-bottom-color: #212121;
+                border-right-color: $ribbon-secondary;
+                border-bottom-color: $ribbon-secondary;
                 border-left-color: transparent;
             }
         }
 
         .BtnAction {
-            background-color: #9E9E9E;
+            background-color: $ribbon-primary;
             &:hover {
-                background-color: #212121;
+                background-color: $ribbon-secondary;
             }
         }
 
         .Footer {
             h4 {
-                color: #212121;
+                color: $ribbon-secondary;
             }
 
             .devicon {
-                background-color: #212121;
+                background-color: $ribbon-secondary;
             }
         }
     }
@@ -117,25 +118,25 @@
         h2 {
             &:before {
                 border-top-color: transparent;
-                border-right-color: #9E9E9E;
-                border-bottom-color: #9E9E9E;
+                border-right-color: $ribbon-primary;
+                border-bottom-color: $ribbon-primary;
                 border-left-color: transparent;
             }
 
             &:after {
-                border-top-color: #212121;
-                border-right-color: #212121;
+                border-top-color: $ribbon-secondary;
+                border-right-color: $ribbon-secondary;
                 border-bottom-color: transparent;
                 border-left-color: transparent;
             }
         }
 
         .Content {
-            background-color: #FAFAFA;
+            background-color: $card-bg;
         }
 
         .BtnAction {
-            border-color: #FAFAFA;
+            border-color: $card-bg;
         }
 
         .Footer {

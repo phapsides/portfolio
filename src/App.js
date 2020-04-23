@@ -1,9 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'; 
-import Nav from './Nav/Nav';
+// import Nav from './Nav/Nav';
 import About from './About/About';
+import Home from './Home/Home';
 import Projects from './Projects/Projects';
-import Footer from './Footer/Footer';
+// import Footer from './Footer/Footer';
 import NotFound from './NotFound/NotFound';
 import './App.scss';
 
@@ -12,15 +13,16 @@ function App() {
 		<Router>
 			<div className="App">
 
-				<Nav />
+				{/* <Nav /> */}
 			
 				<Switch>
-					<Route exact path="/" component={About} />
+					<Route exact path="/" component={Home} />
+					<Route exact path="/about" component={About} />
 					<Route exact path="/projects" component={Projects} />
 					<Route exact path="/not-found" component={NotFound} />
 				</Switch>
 				
-				<Footer />
+				{/* <Footer /> */}
 
 			</div>
 		</Router>

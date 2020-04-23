@@ -1,6 +1,7 @@
-@import './Variables';
-@import './Layout';
-@import './Base';
+@import './common/scss/Variables';
+@import './common/scss/Layout';
+@import './common/scss/Base';
+@import './common/scss/Colours';
 
 @import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,500|Roboto:400,700');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,400,700');
@@ -19,3 +20,15 @@
 		animation: none !important;
     }
 }
+
+
+.block {
+	display: block;
+}
+.text-center {
+	text-align: center;
+}
+.minh-100vh {
+	min-height: 100vh;
+}
+

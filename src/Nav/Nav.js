@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import 'animate.css';
-// import Logo from './logo.svg';
 import './Nav.scss';
 
 export default function Nav() {
@@ -15,7 +14,6 @@ export default function Nav() {
                                 Panos Hapsides
                             </Link>
                         </p>
-                        {/* <img className="logo animated flipInX delay-3s" src={Logo} alt="Panos Hapsided logo" /> */}
                     </div>
                     <div className="column-xs-12 column-md-4">
                         <ul>

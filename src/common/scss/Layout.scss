@@ -18,6 +18,17 @@ $grid-columns: 12;
     width: 100%;
 }
 
+// create grid-container and flex-container
+.container-fluid {
+	display: grid;
+	width: 100%;
+    grid-template-columns: 1fr;
+    @media (min-width: $md) {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+// create grid-container and flex-container
 .grid {
     display: flex;
     flex-direction: column;
@@ -61,4 +72,10 @@ $grid-columns: 12;
             max-width: $i / $grid-columns * 100%;
         }
     }
+}
+
+
+.content-center {
+    align-items: center;
+    justify-content: center;
 }
